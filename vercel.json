@@ -2,7 +2,6 @@
   "buildCommand": "cd twentyfirst-connect && npm run build",
   "outputDirectory": "twentyfirst-connect/dist",
   "framework": "vite",
-  "regions": ["iad1"],
   "env": {
     "VITE_API_BASE_URL": {
       "description": "Backend API URL - e.g., https://api.example.com/api"
@@ -10,23 +9,40 @@
   },
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api/$1"
+      "source": "/",
+      "destination": "/index.html"
     },
     {
-      "source": "/(.*)",
+      "source": "/plans",
       "destination": "/index.html"
-    }
-  ],
-  "headers": [
+    },
     {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600, must-revalidate"
-        }
-      ]
+      "source": "/products",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/coverage",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/faq",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/index.html"
     }
   ]
 }
