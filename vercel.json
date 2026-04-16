@@ -1,0 +1,17 @@
+{
+  "buildCommand": "cd twentyfirst-connect && npm run build",
+  "outputDirectory": "twentyfirst-connect/dist",
+  "framework": "vite",
+  "regions": ["iad1"],
+  "env": {
+    "VITE_API_URL": {
+      "description": "Backend API URL"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
