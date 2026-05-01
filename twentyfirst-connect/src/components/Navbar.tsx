@@ -3,7 +3,7 @@ import { Menu, X, Wifi } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
-import TopHeader from "@/components/TopHeader";
+
 
 const navItems = [
   { label: "Home", href: "/" },
