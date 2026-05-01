@@ -25,7 +25,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-xl border-b border-border" aria-label="Main navigation">
+    <>
+      <TopHeader />
+      <nav className="fixed top-16 left-0 right-0 z-50 bg-card/80 backdrop-blur-xl border-b border-border" aria-label="Main navigation">
       <div className="container mx-auto flex items-center justify-between h-16 px-4 sm:px-6">
         <Link to="/" className="flex items-center gap-2" aria-label="21st Electronics home">
           <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center" aria-hidden="true">
@@ -115,7 +117,9 @@ const Navbar = () => {
         )}
       </AnimatePresence>
     </nav>
+    </>
   );
 };
 
 export default Navbar;
+
